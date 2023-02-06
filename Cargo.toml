@@ -1,0 +1,15 @@
+# SPDX-FileCopyrightText: 2023 perillamint
+#
+# SPDX-License-Identifier: CC0-1.0
+
+[package]
+name = "omnivision-fwldr"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rusb = "0.9"
+clap = { version = "4.1", features = ["derive"] }
+log = "0.4"
