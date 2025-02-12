@@ -42,7 +42,7 @@ fn main() -> ExitCode {
 
     match get_camera_device(vid, pid) {
         Some(camera_device) => {
-            let mut camera = match camera_device.open() {
+            let camera = match camera_device.open() {
                 Ok(device) => device,
                 Err(e) => {
                     panic!("Failed to open device: {e:?}");
